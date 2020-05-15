@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a21fd134cb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>MenWatch</title>
+  </head>
+
+  <body>
+    <div id="wrapper">
+        <header><img src="logo.jpg" alt="Emporio Armani" style="max-width:300px"></header>
+        <nav> 
+          <ul>
+            <li><a href="#home">Domov</a></li>
+            <li><a class="#active" href="#news">Produkty</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+            <li><a href="#about">Sitemapa</a></li>
+            <li><a href="#about"><i class="fas fa-shopping-cart"></i></a></li>
+          </ul>         
+        </nav>
+
+      <main>
+        <a href="watch6.jpg" target="_blank" title="Kliknutím zväčšíte">
+        <img class="nahlad" src="watch6.jpg" alt="Citizen" height="350" width="300">
+        </a>
+
+        <div class="produkt">
+          <h3>Citizen Watch AT4126-55E</h3>
+          <p>Perpetual Chrono AT AT4126-55E sú úžasné a špeciálne hodinky pánov z kolekcie Atomic. Materiál puzdra je z nehrdzavejúcej ocele. 200 metrová vodotesnosť chráni hodinky, umožňuje ich použitie na profesionálne námorné aktivity, potápanie a vodné športy s vysokým dopadom, ale nie na potápanie na hlbokom mori. Hodinky sa dodávajú s originálnou škatuľkou a so zárukou od výrobcu.</p>
+          <p class="price">564 €</p>
+
+          <form>
+            <label>Množstvo:</label>
+            <input type="number" id="quantity" name="Množstvo" min="1" max="5" step="1" value="1">
+          </form>
+                
+          <p><button class="pridat">Pridať do košíka</button></p>
+          
+        </div>
+      </main>
+
+          <aside>
+            <i class="fab fa-facebook"></i><br>
+            <i class="fab fa-instagram"></i><br>
+            <i class="fab fa-twitter"></i><br>
+            <i class="fab fa-telegram"></i>
+          </aside>
+
+      <footer>
+          <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-circle-up"></i></button>
+
+        <script>
+            //button swipe up
+            var mybutton = document.getElementById("myBtn");
+                  
+            // ked zascrollujem nizšie ukáž button
+            window.onscroll = function() {scrollFunction()};
+                  
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } 
+                    
+              else {
+                mybutton.style.display = "none";
+              }
+            }
+                  
+            // ked kliknem na button chod na vrch stránky
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+        </script>
+      </footer>
+    </div>    
+  </body>
+</html>

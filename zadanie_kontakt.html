@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a21fd134cb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>MenWatch</title>
+  </head>
+
+    <body>
+      <div id="wrapper">
+        <header><img src="logo.jpg" alt="Emporio Armani" style="max-width:300px"></header>
+          <nav> 
+            <ul>
+            <li><a href="#home">Domov</a></li>
+            <li><a href="#news">Produkty</a></li>
+              <li><a class="active" href="#contact">Kontakt</a></li>
+              <li><a href="#about">Sitemapa</a></li>
+              <li><a href="#about"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>         
+          </nav>
+
+      <main>
+            
+        <div id="karta">
+          <img src="foto1.jpg" alt="Samuel Knap">
+          <h2>Samuel Knap</h2>
+          <p>Majteľ spoločnosti</p>
+          <p>Pochádzam z Košíc. O podnikanie som sa vždy zaujímal, preto som aj s mojím spoločníkom rozbehli tento projekt. Naším cieľom je poskytovať kvalitné produkty.</p>
+          <p>Email: samuel@menwatch.sk</p>
+        </div>
+
+        <br>
+
+        <div id="karta">
+          <img src="foto2.jpg" alt="Miroslav Anna">
+          <h2>Miroslav Anna</h2>
+          <p>Zástupca spoločnosti</p>
+          <p>Pochádzam z malého mesta. Podnikaniu som sa chcel venovať už od malička. Som jeden zo spoluvlastníkov tejto firmy. Našim cieľom je poskytovať kvalitné výrobky ľuďom.</p>
+          <p>Email: miroslav@menwatch.sk</p>
+        </div>
+
+        <h3>Tešíme sa na spoluprácu s vami!</h3>
+
+        <iframe class=mapa src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3128.385830239882!2d21.24544231566992!3d48.733290779275364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ee0f5bffb45f9%3A0xcdb2da059dc1213f!2zS29tZW5za8OpaG8gNjAvNDQsIDA0MCAwMSBLb8WhaWNl!5e1!3m2!1ssk!2ssk!4v1589566514816!5m2!1ssk!2ssk" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        
+      </main>
+          
+      <aside>
+        <i class="fab fa-facebook"></i><br>
+        <i class="fab fa-instagram"></i><br>
+        <i class="fab fa-twitter"></i><br>
+        <i class="fab fa-telegram"></i>
+      </aside>
+
+      <footer>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-circle-up"></i></button>
+
+        <script>
+          //button swipe up
+          var mybutton = document.getElementById("myBtn");
+                
+          // ked zascrollujem nizšie ukáž button
+          window.onscroll = function() {scrollFunction()};
+                
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+            } 
+                  
+            else {
+              mybutton.style.display = "none";
+            }
+          }
+                
+          // ked kliknem na button chod na vrch stránky
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+        </script>
+
+      </footer>
+    </div>   
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a21fd134cb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>MenWatch</title>
+  </head>
+
+  <body>
+    <div id="wrapper">
+        <header><img src="logo.jpg" alt="Emporio Armani" style="max-width:300px"></header>
+          <nav> 
+            <ul>
+              <li><a href="#home">Domov</a></li>
+              <li><a href="#news">Produkty</a></li>
+              <li><a href="#contact">Kontakt</a></li>
+              <li><a class="active" href="#about">Sitemapa</a></li>
+              <li><a href="#about"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>         
+          </nav>
+
+      <main>
+        <h1>TU BUDE SITEMAPA</h1>
+      </main>
+      
+      <aside>
+        <i class="fab fa-facebook"></i><br>
+        <i class="fab fa-instagram"></i><br>
+        <i class="fab fa-twitter"></i><br>
+        <i class="fab fa-telegram"></i>
+      </aside>
+
+      <footer>
+        <button onclick="topFunction()" id="myBtn" title="Chod hore"><i class="fas fa-arrow-circle-up"></i></button>
+
+        <script>
+          //button swipe up
+          var mybutton = document.getElementById("myBtn");
+                
+          // ked zascrollujem nizšie ukáž button
+          window.onscroll = function() {scrollFunction()};
+                
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+            } 
+                  
+            else {
+               mybutton.style.display = "none";
+            }
+          }
+                
+          // ked kliknem na button chod na vrch stránky
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+        </script>
+
+      </footer>
+
+    </div>   
+  </body>
+</html>

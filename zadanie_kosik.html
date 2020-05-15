@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a21fd134cb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>MenWatch</title>
+  </head>
+
+  <body>
+    <div id="wrapper">
+        <header><img src="logo.jpg" alt="Emporio Armani" style="max-width:300px"></header>
+          <nav> 
+            <ul>
+              <li><a href="#home">Domov</a></li>
+              <li><a href="#news">Produkty</a></li>
+              <li><a href="#contact">Kontakt</a></li>
+              <li><a href="#about">Sitemapa</a></li>
+              <li><a class="active" href="#about"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>         
+          </nav>
+
+      <main>
+        <div class="telo">
+            <div class="vzhlad1">
+              <div class="kontajner">
+                
+          
+                  <div class="telo">
+                    <div class="vzhlad2">
+                      <h3>Adresa doručenia</h3>
+                      <label for="meno"> Celé meno</label>
+                      <input type="text" id="meno" name="meno" placeholder="Adam Horváth">
+                      <label for="email"> Email</label>
+                      <input type="text" id="email" name="email" placeholder="adam.horvath@student.spseke.sk">
+                      <label for="adresa"> Adresa</label>
+                      <input type="text" id="adresa" name="adresa" placeholder="Komenského 44">
+                      <label for="mesto"> Mesto</label>
+                      <input type="text" id="mesto" name="mesto" placeholder="Košice">
+          
+                      <div class="telo">
+                        <div class="vzhlad2">
+                          <label for="stat">Štát</label>
+                          <input type="text" id="stat" name="stat" placeholder="Slovensko">
+                        </div>
+                        <div class="vzhlad2">
+                          <label for="psc">PSČ</label>
+                          <input type="text" id="psc" name="psc" placeholder="04444">
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="vzhlad2">
+                      <h3>Platba</h3>
+                      
+                      <label for="menokarta">Meno majiteľa karty</label>
+                      <input type="text" id="menokarta" name="menokarta" placeholder="Adam Horvath">
+                      <label for="cislokarty">Číslo karty</label>
+                      <input type="text" id="cislokarty" name="cislokarty" placeholder="1111-2222-3333-4444">
+                      <label for="expmesiac">Mesiac expirácie</label>
+                      <input type="text" id="expmesiac" name="expmesiac" placeholder="September">
+          
+                      <div class="telo">
+                        <div class="vzhlad2">
+                          <label for="exprok">Rok expirácie</label>
+                          <input type="text" id="exprok" name="exprok" placeholder="2024">
+                        </div>
+                        <div class="vzhlad2">
+                          <label for="cvv">CVV</label>
+                          <input type="text" id="cvv" name="cvv" placeholder="352">
+                        </div>
+                      </div>
+                    </div>
+          
+                  </div>
+                  <label>
+                    <input type="checkbox" checked="checked" name="sameadr"> Adresa doručenia je rovnaká ako fakturačná
+                  </label>
+                  <input type="submit" value="Objednať" class="btn">
+                
+              </div>
+            </div>
+          
+            <div class="vzhlad3">
+              <div class="kontajner">
+                <h4>Košík
+                  <span class="price" style="color:black">
+                    <b>1</b>
+                  </span>
+                </h4>
+                <p><a href="#">Hodinky Patek Philippe</a> <span class="price">400 000 €</span></p>
+                <br>
+                <hr>
+                <p>Celkovo <span class="price" style="color:black"><b>400 000 €</b></span></p>
+              </div>
+            </div>
+          </div>
+      </main>
+      
+      <aside>
+        <i class="fab fa-facebook"></i><br>
+        <i class="fab fa-instagram"></i><br>
+        <i class="fab fa-twitter"></i><br>
+       <i class="fab fa-telegram"></i>
+      </aside>
+
+      <footer>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-circle-up"></i></button>
+
+        <script>
+          //button swipe up
+          var mybutton = document.getElementById("myBtn");
+                
+          // ked zascrollujem nizšie ukáž button
+          window.onscroll = function() {scrollFunction()};
+                
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+            } 
+                  
+            else {
+               mybutton.style.display = "none";
+            }
+          }
+                
+          // ked kliknem na button chod na vrch stránky
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+        </script>
+
+      </footer>
+
+    </div>   
+  </body>
+</html>
